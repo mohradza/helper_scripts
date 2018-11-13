@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Creating a git repo and pushing it to remote
+# Initialize the local directory as a Git repository.
+git init
+
+# Add the files in your new local repository. This stages them for the first commit.
+git add .
+
+# Commit the files that you've staged in your local repository.
+git commit -m "First commit"
+
+# In Terminal, add the URL for the remote repository where your local repository will be pushed.
+git remote add origin remote repository URL
+
+# Push the changes in your local repository to GitHub.
+git push -u origin master
+
+# List your existing remotes in order to get the name of the remote you want to change:
+git remote -v
+
+# Change your remote's URL from SSH to HTTPS with the git remote set-url command
+# HTTPS:
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+# SSH:
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+
+# Create a new branch
+git checkout -b <branch_name>
+
+# Push the new branch to remote repo
+git push origin <branch_name>
+
+
+
