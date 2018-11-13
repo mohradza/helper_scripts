@@ -17,7 +17,7 @@ tar -cvf <output_filename>.tar <directory>
 tar -xvf <filename>.tar
 
 # Create a compressed gzip archive file of a directory
-tar czvf <output_filename>.tar.gz <directory>
+tar -czvf <output_filename>.tar.gz <directory>
 
 # Uncompress gzip archive file
 tar -xvf <filename>.tar.gz
