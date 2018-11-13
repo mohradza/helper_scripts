@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# CLI scripts for compressing files / folders
+
+# Zip a directory
+zip -r <output_filename>.zip <directory>
+
+# Unzip a file
+unzip <filename>.zip
+
+# Create a tar archive file
+# c: create new tar, v: verbose process, f: file name type
+tar -cvf <output_filename>.tar <directory>
+
+# Untar tar archive file
+# x: extract, v: verbose
+tar -xvf <filename>.tar
+
+# Create a compressed gzip archive file of a directory
+tar czvf <output_filename>.tar.gz <directory>
+
+# Uncompress gzip archive file
+tar -xvf <filename>.tar.gz
+
+
+
