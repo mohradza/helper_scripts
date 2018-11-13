@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Generate ssh key
+ssh-keygen -t rsa -C "email@adress.com"
+
+# Check ssh key
+vim ~/.ssh/id_rsa.pub
+
+
+
+
