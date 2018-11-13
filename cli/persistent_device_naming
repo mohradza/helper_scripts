@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# example of persistent device naming
+# place following script in /etc/udev/rules.d
+ACTION=="add", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="naze"
+
