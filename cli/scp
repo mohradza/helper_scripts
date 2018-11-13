@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Copy a file from local to remote
+scp <local_file> <user>@<ip_address>:<remote_file>
+
+# Copy an entire directory from local to remote
+scp -r <user>@<ip_address>:<remote_dir> <local_dir>
+
